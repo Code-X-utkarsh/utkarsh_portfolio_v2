@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------
+   Global Reset & Base Styles
+--------------------------------*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shift */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Selection */
+::selection {
+    background: rgba(120, 120, 255, 0.25);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove tap highlight on mobile */
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Noise overlay (optional utility) */
+.noise {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("/noise.png");
+    opacity: 0.04;
+    z-index: 50;
+}

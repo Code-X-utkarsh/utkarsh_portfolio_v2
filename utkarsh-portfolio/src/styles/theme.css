@@ -1,0 +1,24 @@
+:root {
+    /* Colors */
+    --color-bg: #0b0c10;
+    --color-bg-soft: #111218;
+    --color-text-primary: #f5f7fa;
+    --color-text-secondary: #a1a6b3;
+    --color-accent: #7c7cff;
+    --color-accent-soft: rgba(124, 124, 255, 0.15);
+
+    /* Typography */
+    --font-primary: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont;
+    --font-secondary: "Inter", system-ui, sans-serif;
+
+    /* Spacing */
+    --section-padding: clamp(4rem, 8vw, 8rem);
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* Shadows */
+    --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
